@@ -1,9 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Coupling.nl</title>
-  </head>
-  <body>
-    Coupling
-  </body>
+<html lang="nl">
+<head>
+	<title>Coupling</title>
+	<meta name="description" content="Ruby on Rails developers met ervaring." />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css" defer>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+	<div class="container">
+		<div class="hero">
+			<h1 class="name"><strong>Coupling</strong></h1>
+			<span class="job-title">Software op maat</span>
+			<span class="email" id="email">mail me</span>
+
+			<h2 class="lead">Software op maat, of implementatie van bestaande pakketten.</h2>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="sections">
+			<h2 class="section-title">Code</h2>
+
+			<div class="list-card">
+				<span class="exp">+ Liefde</span>
+				<div>
+					<h3>Coupling &#9829; software</h3>
+					<span>Maximale functionaliteit met zo min mogelijk code.</span>
+				</div>
+			</div>
+
+			<div class="list-card">
+				<span class="exp">+ Passie</span>
+				<div>
+					<h3>Snelle websites</h3>
+					<span>Hoog scoren op Page speed, SEO, usability & accessibility</span>
+				</div>
+			</div>
+
+			<div class="list-card">
+				<span class="exp">+ Kennis</span>
+				<div>
+					<h3>Ervaring</h3>
+					<span>Van globale architectuur tot uitwerking in details.</span>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="sections">
+				<h2 class="section-title">Principes</h2>
+
+				<div class="list-card">
+					<div>
+						<h3>Open source</h3>
+						<span>Waar mogelijk open source software boven dure commerciële oplossingen.</span>
+					</div>
+				</div>
+
+				<div class="list-card">
+					<div>
+						<h3>Pragmatisme</h3>
+						<span>In veel gevallen is het handiger om te kiezen voor een voordelige SaaS oplossing als Shopify of Wordpress.</span>
+					</div>
+				</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="container cards">
+
+		<div class="card">
+			<div class="skill-level">
+				<h2>30</h2>
+				<span>+</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Klanten</h3>
+				<span>LaDress, Wrts, Young Capital, Wissel.nl, Inspire, Ikbenfrits, etc.</span>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="skill-level">
+				<h2>20</h2>
+				<span>+</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Jaar ervaring</h3>
+				<span>Mensen en communicatie boven processen en tools. Direct contact.</span>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="skill-level">
+				<h2>7</h2>
+				<span>+</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Talen</h3>
+				<span>Ruby (on Rails), Javascript, HTML, CSS, Java, Haskell, etc.</span>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="skill-level">
+				<h2>95</h2>
+				<span>€</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Uurtarief</h3>
+				<span>Dit is onderhandelbaar voor langere projecten.</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<ol class="timeline">
+		  <li>
+		    <p class="line">Geschiedenis</p>
+		    <span class="point"></span>
+		    <p class="description">
+		      Eerste website live.
+		    </p>
+		    <span class="date">1999</span>
+		  </li>
+
+		  <li>
+		    <span class="point"></span>
+		    <p class="description">
+		      Eerste site met meer dan een miljoen gebruikers
+		    </p>
+		    <span class="date">2005</span>
+		  </li>
+
+		  <li>
+		    <span class="point"></span>
+		    <p class="description">
+		      Eerste site in Ruby on Rails
+		    </p>
+		    <span class="date">2007</span>
+		  </li>
+
+		  <li>
+		    <span class="point"></span>
+		    <p class="description">
+		      Redis, Elasticsearch, React
+		    </p>
+		    <span class="date">2019</span>
+		  </li>
+		</ol>
+
+	</div>
+
+
+	<br><br>
+
+
+	<footer class="container">
+
+	</footer>
+
+	<script>
+		document.getElementById('email').innerHTML= '<a href="mailto:ma' + 'rtijn@cou' + 'pling.nl">marti'+'jn@coup'+'ling.nl</a>';
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-551478-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
 </html>
