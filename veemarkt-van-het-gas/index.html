@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Waarom goed geïsoleerde huizen met zonnepanelen aan de Veemarkt helemaal van het gas af kunnen: koel comfort, gratis warm water uit de zon en lagere vaste lasten.">
+<title>Veemarkt is er klaar voor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html{color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+:root{
+  --ground:#F2F6F7;
+  --surface:#FFFFFF;
+  --ink:#0E2A33;
+  --muted:#4F6870;
+  --line:#D3E0E3;
+  --sun:#E9A800;
+  --sun-soft:#FBE9B0;
+  --cool:#2F7FA8;
+  --cool-soft:#D6EAF3;
+  --flame:#C4502B;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0B1C22; --surface:#122A32; --ink:#E6F0F2; --muted:#9DB5BC; --line:#23434D;
+    --sun:#F5BE2E; --sun-soft:#3D3313; --cool:#6CB8DE; --cool-soft:#15384A; --flame:#E7784F;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0B1C22; --surface:#122A32; --ink:#E6F0F2; --muted:#9DB5BC; --line:#23434D;
+  --sun:#F5BE2E; --sun-soft:#3D3313; --cool:#6CB8DE; --cool-soft:#15384A; --flame:#E7784F;
+}
+
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.08}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:72px}
+a{color:var(--cool)}
+:focus-visible{outline:3px solid var(--cool);outline-offset:2px}
+
+/* hero */
+.hero{padding-block:88px 72px;color:#F4F7F8;
+  background:linear-gradient(100deg,rgba(8,20,30,.88) 0%,rgba(8,20,30,.62) 45%,rgba(8,20,30,.25) 100%),url("veemarkt.jpg") center 55%/cover no-repeat #0B1C22}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:#F5BE2E}
+.hero .eyebrow{color:#C9D8DD}
+.lede{margin-top:20px;font-size:1.2rem;color:#DCE6E9;max-width:34em}
+.hero .btn-primary{background:#F5BE2E;color:#0E2A33}
+.hero .btn-ghost{border-color:rgba(255,255,255,.55);color:#F4F7F8}
+.hero .chart-box{color:var(--ink);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.photo-credit{margin-top:22px;font-size:.8rem;color:#AFC2C8}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:600;text-decoration:none;font-family:var(--body)}
+.btn-primary{background:var(--ink);color:var(--ground)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink)}
+.chart-box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 18px 14px}
+.chart-box figcaption{font-size:.9rem;color:var(--muted);margin-top:8px}
+.chart-box svg{width:100%;height:auto;display:block}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+
+/* reasons */
+.intro{max-width:40em;margin-top:14px;color:var(--muted)}
+.group{margin-top:48px}
+.group-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.group-head .tag{font-family:var(--mono);font-size:.78rem;padding:3px 10px;border-radius:999px;background:var(--c-soft);color:var(--ink)}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px 36px;margin-top:22px}
+.reason h3{display:flex;gap:10px;align-items:flex-start}
+.reason h3::before{content:"";flex:none;width:10px;height:10px;margin-top:.45em;border-radius:50%;background:var(--c)}
+.reason p{margin-top:8px;color:var(--muted)}
+.reason strong{color:var(--ink);font-weight:600}
+.g-comfort{--c:var(--cool);--c-soft:var(--cool-soft)}
+.g-geld{--c:var(--sun);--c-soft:var(--sun-soft)}
+.g-wereld{--c:#3E9A6B;--c-soft:color-mix(in srgb,#3E9A6B 22%,transparent)}
+
+/* absurd banner */
+.absurd{background:var(--ink);color:var(--ground);border-radius:22px;padding:40px 36px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.absurd .temp{font-family:var(--display);font-weight:800;font-size:clamp(3rem,9vw,6rem);line-height:1;color:var(--sun)}
+.absurd p{font-size:1.15rem;opacity:.85;margin-top:10px;max-width:36em}
+.absurd h2{color:var(--ground)}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}
+.fields{display:grid;gap:18px}
+.field label{display:flex;justify-content:space-between;gap:12px;font-weight:600;font-size:.95rem}
+.field label output{font-family:var(--mono);font-weight:500;font-variant-numeric:tabular-nums;color:var(--muted)}
+.field input[type=range]{width:100%;accent-color:var(--cool);margin-top:6px}
+.field small{display:block;color:var(--muted);font-size:.82rem}
+.result{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.big{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,6vw,3.6rem);line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.rows{margin-top:22px;display:grid;gap:10px;font-variant-numeric:tabular-nums}
+.rows div{display:flex;justify-content:space-between;gap:12px;border-top:1px dashed var(--line);padding-top:10px}
+.rows dt{color:var(--muted)} .rows dd{margin:0;font-family:var(--mono)}
+.note{font-size:.85rem;color:var(--muted);margin-top:18px}
+
+/* check */
+.checks{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.checks input{width:20px;height:20px;accent-color:#3E9A6B;margin-top:3px;flex:none}
+.checks label{cursor:pointer}
+.checks b{display:block}
+.checks span{color:var(--muted);font-size:.93rem}
+.verdict{margin-top:18px;font-weight:600}
+
+footer{padding-block:40px 60px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+
+@media (max-width:820px){
+  .hero-grid,.calc{grid-template-columns:1fr}
+  .absurd{grid-template-columns:1fr;padding:30px 22px}
+  section{padding-block:52px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .btn{transition:transform .15s} .btn:hover{transform:translateY(-1px)}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Goed geïsoleerd · zonnepanelen op het dak</p>
+      <h1 style="margin-top:14px">Veemarkt is er klaar voor. <em>Nu de gasleiding nog.</em></h1>
+      <p class="lede">Je dak maakt op een zomerdag veel meer stroom dan je gebruikt. Die stroom geef je nu bijna gratis weg, terwijl je voor warm water nog steeds gas verbrandt. Met een warmtepomp gebruik je je eigen zon voor koelen, douchen en verwarmen.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#waarom">Waarom nu?</a>
+        <a class="btn btn-ghost" href="#rekenen">Reken het uit</a>
+      </div>
+      <p class="photo-credit">Foto: de Veemarkt bij schemering</p>
+    </div>
+    <figure class="chart-box" style="margin:0">
+      <div class="legend">
+        <span style="--c:var(--sun)">Opwek zonnepanelen</span>
+        <span style="--c:var(--muted)">Normaal verbruik</span>
+        <span style="--c:var(--cool)">Overschot → boiler &amp; koeling</span>
+      </div>
+      <svg id="daycurve" viewBox="0 0 600 270" role="img" aria-label="Grafiek van een zomerdag: tussen 10 en 17 uur wekken de zonnepanelen veel meer op dan het huis verbruikt."></svg>
+      <figcaption>Een typische zomerdag (indicatief). Het blauwe vlak is stroom die je nu terug levert aan het net.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<section id="waarom">
+  <div class="wrap">
+    <p class="eyebrow">Twaalf redenen</p>
+    <h2 style="margin-top:10px">Waarom helemaal van het gas af?</h2>
+    <p class="intro">Een hybride warmtepomp is een mooie eerste stap. Maar als je huis al goed geïsoleerd is en je zonnepanelen hebt, haal je het meeste voordeel pas als de gasaansluiting er helemaal uit gaat.</p>
+
+    <div class="group g-comfort">
+      <div class="group-head"><h3 style="font-size:1.35rem">Comfort</h3><span class="tag">thuis merk je het direct</span></div>
+      <div class="reasons">
+        <article class="reason"><h3>Koel in de zomer, op je eigen stroom</h3><p>Een lucht-waterwarmtepomp kan via de vloer koelen; een lucht-luchtwarmtepomp werkt als airco. Juist op hete dagen hebben je panelen <strong>het meeste overschot</strong>. Dat geef je dan niet weg, maar gebruik je voor een koel huis.</p></article>
+        <article class="reason"><h3>Warm water uit de zon</h3><p>Een boilervat van 150 à 200 liter is in feite een <strong>batterij voor warmte</strong>. Laat de warmtepomp hem 's middags opwarmen met je zonnestroom: in de zomer douche je dan gratis. In de winter warm je hem op tijdens daltarief of de goedkoopste uren van een dynamisch contract.</p></article>
+        <article class="reason"><h3>Gezonder en veiliger huis</h3><p>Geen verbranding meer in huis betekent geen risico op koolmonoxide en geen gaslek. Koken op inductie is sneller, makkelijker schoon te houden en geeft <strong>geen stikstofdioxide in je keuken</strong>.</p></article>
+        <article class="reason"><h3>Gelijkmatige, stille warmte</h3><p>Een warmtepomp verwarmt rustig en constant op lage temperatuur. Geen koude en warme pieken meer, maar het hele huis op een aangename temperatuur. Precies waar een goed geïsoleerd huis voor gemaakt is.</p></article>
+      </div>
+    </div>
+
+    <div class="group g-geld">
+      <div class="group-head"><h3 style="font-size:1.35rem">Portemonnee</h3><span class="tag">nu en straks</span></div>
+      <div class="reasons">
+        <article class="reason"><h3>De salderingsregeling stopt op 1 januari 2027</h3><p>Vanaf dan krijg je voor teruggeleverde stroom veel minder dan je voor stroom betaalt, en veel leveranciers rekenen al <strong>terugleverkosten</strong>. Elke kWh die je zelf gebruikt, is dan veel meer waard dan een kWh die je teruglevert.</p></article>
+        <article class="reason"><h3>Geen vaste kosten meer voor gas</h3><p>Zolang je een gasaansluiting hebt, betaal je vastrecht en netbeheerkosten, ook als je bijna geen gas gebruikt. Haal je de aansluiting weg, dan scheelt dat al snel <strong>enkele honderden euro's per jaar</strong>.</p></article>
+        <article class="reason"><h3>Je huis wordt meer waard</h3><p>Een all-electric woning met warmtepomp en zonnepanelen krijgt een beter energielabel. Kopers letten steeds meer op maandlasten, en woningen met een <strong>groen label verkopen voor een hogere prijs</strong>.</p></article>
+        <article class="reason"><h3>Gas wordt duurder, stroom niet</h3><p>De overheid verschuift de energiebelasting stap voor stap van stroom naar gas. Hoe minder mensen gas gebruiken, hoe hoger de <strong>netkosten per aansluiting</strong> worden voor wie overblijft.</p></article>
+        <article class="reason"><h3>Subsidie en gunstige lening</h3><p>Via de ISDE-subsidie krijg je een deel van de aanschaf van een warmtepomp terug. Bij veel gemeenten en het Warmtefonds kun je voordelig lenen. Kijk voor actuele bedragen op <a href="https://www.rvo.nl/subsidies-financiering/isde" target="_blank" rel="noopener">rvo.nl</a>.</p></article>
+      </div>
+    </div>
+
+    <div class="group g-wereld">
+      <div class="group-head"><h3 style="font-size:1.35rem">De wereld</h3><span class="tag">groter dan je eigen huis</span></div>
+      <div class="reasons">
+        <article class="reason"><h3>Geen geld naar gasstaten</h3><p>Groningen is dicht, dus bijna al ons gas komt uit het buitenland. Dat is deels vloeibaar gas (lng), en een deel daarvan komt nog steeds uit Rusland. Wat je niet verbrandt, hoef je niet te kopen. Zo gaat er <strong>geen euro meer naar regimes die aan gas verdienen</strong>.</p></article>
+        <article class="reason"><h3>Beter voor het klimaat</h3><p>Elke kubieke meter gas die je verbrandt, stoot ongeveer <strong>1,8 kg CO₂</strong> uit. Een warmtepomp op je eigen zonnestroom en groene stroom van het net stoot bijna niets uit.</p></article>
+        <article class="reason"><h3>Toekomstbestendig</h3><p>Nederland gaat van het aardgas af. Wie nu overstapt, doet dat op een moment dat het uitkomt, met subsidie en zonder haast. En niet pas als de ketel stuk is en de installateur pas over zes weken kan komen.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-block:24px">
+  <div class="wrap">
+    <div class="absurd">
+      <div class="temp" aria-hidden="true">32°</div>
+      <div>
+        <h2>Buiten is het 32 graden. Je cv-ketel verbrandt gas voor je douche.</h2>
+        <p>Je dak ligt vol stroom en het huis is al te warm. Toch gaat er vuur aan in de meterkast om water op te warmen. Met een warmtepompboiler is dat water in de zomer gewoon gratis warm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rekenen">
+  <div class="wrap">
+    <p class="eyebrow">Indicatie</p>
+    <h2 style="margin-top:10px">Wat scheelt het jou per jaar?</h2>
+    <p class="intro">Schuif met de waarden die op je eigen jaarafrekening staan. Deze berekening gaat alleen over de jaarlijkse energiekosten, niet over de aanschaf.</p>
+    <div class="calc">
+      <form class="fields" id="calc" onsubmit="return false">
+        <div class="field">
+          <label for="gas">Gasverbruik per jaar <output id="o-gas"></output></label>
+          <input type="range" id="gas" min="200" max="2500" step="50" value="900">
+          <small>Staat op je jaarafrekening, in m³.</small>
+        </div>
+        <div class="field">
+          <label for="gasprijs">Gasprijs per m³ <output id="o-gasprijs"></output></label>
+          <input type="range" id="gasprijs" min="0.80" max="2.50" step="0.05" value="1.40">
+        </div>
+        <div class="field">
+          <label for="vast">Vaste kosten gas per jaar <output id="o-vast"></output></label>
+          <input type="range" id="vast" min="0" max="600" step="10" value="300">
+          <small>Vastrecht en netbeheer. Die vallen weg als de aansluiting eruit gaat.</small>
+        </div>
+        <div class="field">
+          <label for="stroom">Stroomprijs per kWh <output id="o-stroom"></output></label>
+          <input type="range" id="stroom" min="0.10" max="0.50" step="0.01" value="0.28">
+        </div>
+        <div class="field">
+          <label for="scop">Rendement warmtepomp (SCOP) <output id="o-scop"></output></label>
+          <input type="range" id="scop" min="2.5" max="5.5" step="0.1" value="4.0">
+          <small>Hoe beter geïsoleerd, hoe hoger. Rond 4 is een gangbare waarde.</small>
+        </div>
+        <div class="field">
+          <label for="zon">Deel uit eigen zonnepanelen <output id="o-zon"></output></label>
+          <input type="range" id="zon" min="0" max="60" step="5" value="25">
+          <small>Vooral warm water in de zomer. Die stroom had je anders voor een paar cent teruggeleverd.</small>
+        </div>
+      </form>
+      <div class="result" aria-live="polite">
+        <p class="eyebrow">Geschatte besparing per jaar</p>
+        <p class="big" id="r-save" style="margin-top:8px"></p>
+        <dl class="rows">
+          <div><dt>Nu: gas + vaste kosten</dt><dd id="r-now"></dd></div>
+          <div><dt>Straks: stroom voor warmtepomp</dt><dd id="r-hp"></dd></div>
+          <div><dt>Stroomverbruik warmtepomp</dt><dd id="r-kwh"></dd></div>
+          <div><dt>Minder CO₂-uitstoot</dt><dd id="r-co2"></dd></div>
+        </dl>
+        <p class="note">Aannames: 1 m³ gas levert in een cv-ketel ongeveer 8,8 kWh warmte, en 1 m³ gas geeft 1,8 kg CO₂ uitstoot. Eigen zonnestroom is gerekend tegen een gemiste terugleververgoeding van €0,05 per kWh. Dit is een indicatie, geen offerte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="check" style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">Snelle check</p>
+    <h2 style="margin-top:10px">Is jouw huis er klaar voor?</h2>
+    <ul class="checks">
+      <li><input type="checkbox" id="c1"><label for="c1"><b>Goed geïsoleerd</b><span>Dak, gevel, vloer en minstens HR++ glas. Energielabel B of beter.</span></label></li>
+      <li><input type="checkbox" id="c2"><label for="c2"><b>Zonnepanelen op het dak</b><span>Hoe meer overschot in de zomer, hoe groter het voordeel.</span></label></li>
+      <li><input type="checkbox" id="c3"><label for="c3"><b>Lage temperatuur verwarming</b><span>Vloerverwarming of grote radiatoren; 50 °C aanvoer is genoeg.</span></label></li>
+      <li><input type="checkbox" id="c4"><label for="c4"><b>Plek voor een boilervat</b><span>Ongeveer 60 × 60 cm, bijvoorbeeld op zolder of in de berging.</span></label></li>
+      <li><input type="checkbox" id="c5"><label for="c5"><b>Plek voor een buitenunit</b><span>Tuin, plat dak of gevel, niet direct naast het slaapkamerraam van de buren.</span></label></li>
+      <li><input type="checkbox" id="c6"><label for="c6"><b>Klaar voor inductie</b><span>Een aparte groep in de meterkast, of een krachtstroomaansluiting.</span></label></li>
+    </ul>
+    <p class="verdict" id="verdict"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Alle bedragen en percentages zijn indicatief. Vraag een installateur om een warmteverliesberekening en een offerte op maat, en kijk op <a href="https://www.rvo.nl/subsidies-financiering/isde" target="_blank" rel="noopener">rvo.nl</a> en <a href="https://www.milieucentraal.nl/energie-besparen/duurzaam-verwarmen-en-koelen/" target="_blank" rel="noopener">milieucentraal.nl</a> voor actuele subsidies en advies.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Day curve
+  const svg = document.getElementById('daycurve');
+  const X0=44, X1=584, Y0=228, H=190;
+  const x = h => X0 + h/24*(X1-X0);
+  const y = v => Y0 - v*H;
+  const solar = h => { const t=(h-5.5)/15.5; return t<=0||t>=1?0:Math.pow(Math.sin(Math.PI*t),1.6); };
+  const use = h => 0.10 + 0.14*Math.exp(-((h-7.5)**2)/1.5) + 0.22*Math.exp(-((h-18.8)**2)/3) + 0.04*Math.exp(-((h-13)**2)/4);
+  const pts = []; for(let h=0; h<=24.001; h+=0.25) pts.push(h);
+  const line = f => pts.map((h,i)=>(i?'L':'M')+x(h).toFixed(1)+' '+y(f(h)).toFixed(1)).join(' ');
+  const top = pts.map(h=>[x(h),y(Math.max(solar(h),use(h)))]);
+  const bot = pts.slice().reverse().map(h=>[x(h),y(use(h))]);
+  const surplus = 'M'+top.concat(bot).map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L')+' Z';
+  const solarArea = line(solar)+` L${X1} ${Y0} L${X0} ${Y0} Z`;
+  let ticks='';
+  for(let h=0; h<=24; h+=6){
+    ticks += `<line x1="${x(h)}" y1="${Y0}" x2="${x(h)}" y2="${Y0+5}" stroke="var(--line)"/>`+
+             `<text x="${x(h)}" y="${Y0+22}" text-anchor="middle" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--muted)">${String(h).padStart(2,'0')}:00</text>`;
+  }
+  svg.innerHTML = `
+    <line x1="${X0}" y1="${Y0}" x2="${X1}" y2="${Y0}" stroke="var(--line)"/>
+    ${ticks}
+    <path d="${solarArea}" fill="var(--sun)" fill-opacity="0.18"/>
+    <path d="${surplus}" fill="var(--cool)" fill-opacity="0.55"/>
+    <path d="${line(solar)}" fill="none" stroke="var(--sun)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="${line(use)}" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="${x(13)}" y="${y(0.55)}" text-anchor="middle" font-size="14" font-weight="700" font-family="Bricolage Grotesque, system-ui, sans-serif" fill="var(--ink)">overschot</text>
+    <text x="${x(13)}" y="${y(0.55)+17}" text-anchor="middle" font-size="12" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink)">nu: bijna gratis weggeven</text>
+    <text x="${x(21.2)}" y="${y(0.38)}" text-anchor="middle" font-size="12" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--muted)">avondpiek</text>
+    <text x="${X0-6}" y="${y(1)+4}" text-anchor="end" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--muted)">kW</text>
+  `;
+
+  // Calculator
+  const $ = id => document.getElementById(id);
+  const eur = n => '€ ' + Math.round(n).toLocaleString('nl-NL');
+  const fmt2 = n => '€ ' + n.toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2});
+  function calc(){
+    const gas=+$('gas').value, gp=+$('gasprijs').value, vast=+$('vast').value,
+          sp=+$('stroom').value, scop=+$('scop').value, zon=+$('zon').value/100;
+    $('o-gas').textContent = gas.toLocaleString('nl-NL')+' m³';
+    $('o-gasprijs').textContent = fmt2(gp);
+    $('o-vast').textContent = eur(vast);
+    $('o-stroom').textContent = fmt2(sp);
+    $('o-scop').textContent = scop.toLocaleString('nl-NL',{minimumFractionDigits:1});
+    $('o-zon').textContent = Math.round(zon*100)+'%';
+    const now = gas*gp + vast;
+    const kwh = gas*8.8/scop;
+    const hp = kwh*(1-zon)*sp + kwh*zon*0.05;
+    const save = now-hp;
+    $('r-save').textContent = eur(save);
+    $('r-now').textContent = eur(now);
+    $('r-hp').textContent = eur(hp);
+    $('r-kwh').textContent = Math.round(kwh).toLocaleString('nl-NL')+' kWh';
+    $('r-co2').textContent = Math.round(gas*1.8).toLocaleString('nl-NL')+' kg';
+  }
+  $('calc').addEventListener('input', calc); calc();
+
+  // Checklist
+  const boxes = [...document.querySelectorAll('.checks input')];
+  function verdict(){
+    const n = boxes.filter(b=>b.checked).length;
+    const msg = n===0 ? 'Vink aan wat voor jouw huis klopt.'
+      : n>=5 ? `${n} van de 6: jouw huis is een prima kandidaat. Vraag een installateur om een warmteverliesberekening.`
+      : n>=3 ? `${n} van de 6: goed op weg. Kijk wat er nog nodig is voordat je de gasaansluiting laat weghalen.`
+      : `${n} van de 6: begin met isoleren. Dat maakt een warmtepomp later kleiner en zuiniger.`;
+    $('verdict').textContent = msg;
+  }
+  boxes.forEach(b=>b.addEventListener('change',verdict)); verdict();
+})();
+</script>
+</body>
+</html>
