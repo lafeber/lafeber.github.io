@@ -274,7 +274,7 @@
   geverifieerd moeten worden bij de bron.</p>
 
   <div class="cover-meta">
-    <div>Versie<span>1.2</span></div>
+    <div>Versie<span>1.3</span></div>
     <div>Datum<span>23 september 2026</span></div>
     <div>Scope<span>Nederland, zichtjaar 2030</span></div>
     <div>Status<span>Discussiestuk</span></div>
@@ -288,7 +288,7 @@
 
 <!-- ============================ PAGE 2 — BOM ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 1 · Kostenopbouw</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 1 · Kostenopbouw</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 1</p>
@@ -391,32 +391,24 @@
 
 <!-- ============================ PAGE 3 — ROUTES ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 2 · De routekeuze</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 2 · Waarom DC afvalt</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 2</p>
-    <h2>De routekeuze weegt zwaarder dan de techniekkeuze</h2>
+    <h2>Waarom de DC-route afvalt</h2>
     <p class="sub">Er zijn twee manieren om een auto bidirectioneel te maken. Ze verschillen een
-    factor vier in kosten, en die factor bepaalt of V2G überhaupt kan concurreren met gewoon
-    netbatterijen bouwen.</p>
+    factor vier in kosten, en dat verschil beslist welke van de twee de rest van dit document
+    waard is.</p>
   </div>
 
-  <div class="two-col" style="margin-bottom:5mm">
-    <div>
-      <h3>DC — omvormer in de paal</h3>
-      <p>De laadpaal bevat de volledige netgekoppelde omvormer. De auto levert alleen gelijkstroom
-      en hoeft geen productie-installatie te zijn. Merk-onafhankelijk van opzet, en daarom
-      historisch de gekozen route. Meerkosten: de volledige kast, circa <strong>€1.150</strong>
-      bovenop een gewone AC-laadpaal.</p>
-    </div>
-    <div>
-      <h3>AC — omvormer in de auto</h3>
-      <p>De on-board charger wordt bidirectioneel. Die heeft al een PFC-trap en een geïsoleerde
-      DC/DC-trap; beide bidirectioneel maken is grotendeels een topologiekeuze — dioden vervangen
-      door actieve schakelaars — plus software. Meerkosten: <strong>€150</strong> in de auto en
-      circa <strong>€100</strong> aan de laadzijde. ISO 15118-20 dekt deze modus.</p>
-    </div>
-  </div>
+  <p>Bij <strong>DC</strong> zit de volledige netgekoppelde omvormer in de laadpaal; de auto
+  levert alleen gelijkstroom en hoeft geen productie-installatie te zijn. Merk-onafhankelijk van
+  opzet, en daarom historisch de gekozen route — maar de meerkosten zijn de hele kast, circa
+  <strong>€1.150</strong> bovenop een gewone AC-laadpaal bij serieproductie. Bij <strong>AC</strong>
+  wordt de on-board charger bidirectioneel: die heeft al een PFC-trap en een geïsoleerde DC/DC-trap,
+  dus beide omkeerbaar maken is grotendeels een topologiekeuze plus software. Meerkosten:
+  <strong>€150</strong> in de auto en circa <strong>€100</strong> aan de laadzijde. ISO 15118-20
+  dekt deze modus.</p>
 
   <figure>
     <div class="fig-title">Figuur 2 · Wat 2,1 GW / 2,8 GWh flexibiliteit kost</div>
@@ -457,16 +449,16 @@
   </figure>
 
   <div class="callout">
-    <div class="big">De DC-route is maar 1,2× goedkoper dan simpelweg netbatterijen bouwen. Dat
-    verschil valt binnen de foutmarge van dit model. Alleen de AC-route is met 5,6× beslissend.</div>
+    <div class="big">De DC-route is maar 1,2× goedkoper dan simpelweg netbatterijen bouwen — een
+    verschil binnen de foutmarge van dit model. Daarmee valt hij af. Alleen de AC-route is met
+    5,6× beslissend.</div>
   </div>
 
-  <p>Deze uitkomst is contra-intuïtief. Het debat gaat meestal over <em>of</em> je V2G wilt. Maar
-  wie de DC-route kiest, koopt een marginale verbetering ten opzichte van een netbatterij en
-  neemt er veel complexiteit bij: drie partijen die moeten samenwerken, een auto die er moet
-  staan, een klant die mee moet willen. De AC-route verandert de aard van de vraag — daar is de
-  opslagcapaciteit <strong>al betaald, voor een andere reden</strong>, en betaal je alleen nog
-  voor de vermogenselektronica. Geen andere vorm van opslag heeft die eigenschap.</p>
+  <p>En dat is nog de <em>optimistische</em> lezing, want €1.150 is een prijs bij serieproductie.
+  In de Nederlandse praktijk kost een bidirectionele laadpaal inclusief installatie vandaag
+  <strong>€6.000–8.000</strong>. De rest van dit document gaat daarom over de AC-route: daar is de
+  opslagcapaciteit <strong>al betaald, voor een andere reden</strong>, en betaal je alleen nog voor
+  de vermogenselektronica. Geen andere vorm van opslag heeft die eigenschap.</p>
 
   <table style="margin-top:4mm">
     <caption>Uitkomsten per route, bij de basisaannames</caption>
@@ -482,12 +474,12 @@
     </tbody>
   </table>
 
-  <div class="folio"><span>Deel 2 · De routekeuze</span><span class="num">3</span></div>
+  <div class="folio"><span>Deel 2 · Waarom DC afvalt</span><span class="num">3</span></div>
 </section>
 
 <!-- ============================ PAGE 4 — LANDELIJK ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 3 · Landelijke capaciteit</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 3 · Landelijke capaciteit</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 3</p>
@@ -558,7 +550,7 @@
 
 <!-- ============================ PAGE 5 — SLIM LADEN ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 4 · De eerlijke vergelijking</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 4 · De eerlijke vergelijking</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 4</p>
@@ -632,7 +624,7 @@
 
 <!-- ============================ PAGE 6 — WERKGEVERSCASUS ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 5 · De werkgeverscasus</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 5 · De werkgeverscasus</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 5</p>
@@ -710,7 +702,7 @@
 
 <!-- ============================ PAGE 7 — WAAR HET BREEKT ============================ -->
 <section class="page">
-  <div class="runner"><span>Deel 6 · Waar het model breekt</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Deel 6 · Waar het model breekt</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Deel 6</p>
@@ -770,7 +762,7 @@
 
 <!-- ============================ PAGE 7 — AANNAMES ============================ -->
 <section class="page">
-  <div class="runner"><span>Bijlage A · Aannames</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Bijlage A · Aannames</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Bijlage A</p>
@@ -826,7 +818,7 @@
 
 <!-- ============================ PAGE 8 — VERANTWOORDING ============================ -->
 <section class="page">
-  <div class="runner"><span>Bijlage B · Verantwoording</span><span>Werkdocument v1.2</span></div>
+  <div class="runner"><span>Bijlage B · Verantwoording</span><span>Werkdocument v1.3</span></div>
 
   <div class="sectionhead">
     <p class="eyebrow">Bijlage B</p>
@@ -856,37 +848,35 @@
     <li>De actuele status van ISO 15118-20 AC BPT in typegoedkeuring en netcode.</li>
   </ul>
 
-  <h3>Wijzigingen ten opzichte van versie 1.0</h3>
-  <p>De CCS2-post in deel 1 is verlaagd van €100–180 naar €60–120, geijkt op de retailprijs van
-  een losse Type 2-kabel (€61,91 incl. btw, Boelsites.nl, september 2026) en op het gegeven dat
-  een getetherde DC-kabel maar één voertuigconnector heeft. Tegelijk is de meerprijs van de
-  DC-route verhoogd van €1.000 naar €1.150, omdat die in v1.0 niet consistent uit de stuklijst
-  was afgeleid. Netto-effect: het voordeel van de DC-route ten opzichte van netbatterijen daalt
-  van 1,4× naar 1,2×. De hoofdconclusie wordt door beide correcties <em>versterkt</em>, niet
-  ondermijnd.</p>
-
-  <p><strong>v1.2:</strong> deel 5 toegevoegd over werkplekladen op bedrijfszon, inclusief de
-  seizoensmismatch tussen zonaanbod en winteravondpiek.</p>
+  <table style="margin-bottom:4mm">
+    <caption>Wijzigingen ten opzichte van versie 1.0</caption>
+    <thead><tr><th style="width:12%">Versie</th><th>Wijziging</th></tr></thead>
+    <tbody>
+      <tr><td><strong>v1.1</strong></td><td class="note-cell">CCS2-post €100–180 → €60–120, geijkt op de
+      retailprijs van een losse Type 2-kabel (€61,91 incl. btw, sept. 2026) en op het gegeven dat een
+      getetherde DC-kabel maar één voertuigconnector heeft. Tegelijk DC-meerprijs €1.000 → €1.150, die in
+      v1.0 niet consistent uit de stuklijst was afgeleid. DC-voordeel zakte van 1,4× naar 1,2×.</td></tr>
+      <tr><td><strong>v1.2</strong></td><td class="note-cell">Deel 5 toegevoegd over werkplekladen op
+      bedrijfszon, met de seizoensmismatch tussen zonaanbod en winteravondpiek.</td></tr>
+      <tr><td><strong>v1.3</strong></td><td class="note-cell">Deel 2 ingekort tot de afrekening van de
+      DC-route, met de actuele Nederlandse marktprijs van €6.000–8.000 erbij. Deel 1 blijft staan als
+      onderbouwing.</td></tr>
+    </tbody>
+  </table>
 
   <h3>Waarom de eenheid €/kW er meer toe doet dan €/kWh</h3>
-  <p>De centrale observatie van dit model is dat bij V2G de opslagcapaciteit een bijproduct is.
-  De batterij is gekocht om mee te rijden; de marginale kosten van de kWh's zijn nul. Alleen de
-  vermogenselektronica kost geld. Dat maakt elke vergelijking op basis van €/kWh — de gebruikelijke
-  eenheid in opslagdiscussies — misleidend in het voordeel van V2G, en elke vergelijking op basis
-  van €/kW eerlijker. Beide staan daarom in de tabel op pagina 3.</p>
+  <p>Bij V2G is de opslagcapaciteit een bijproduct: de batterij is gekocht om mee te rijden, dus de
+  marginale kosten van de kWh's zijn nul en alleen de vermogenselektronica kost geld. Dat maakt
+  €/kWh — de gebruikelijke eenheid in opslagdiscussies — misleidend in het voordeel van V2G, en
+  €/kW eerlijker. Beide staan in de tabel op pagina 3.</p>
 
   <div class="panel">
     <h3>De kern in drie zinnen</h3>
-    <p>De prijs van bidirectionele laders zakt met volume tot ongeveer €1.000–1.500, en niet
-    verder, omdat connector en isolatie de bodem leggen. Dat maakt de DC-route nauwelijks
-    aantrekkelijker dan netbatterijen bouwen. Alleen door de omvormer in de auto te zetten
-    verdwijnt die bodem — en dat is een ontwerp- en certificeringskeuze die nu gemaakt moet
-    worden, omdat de vloot vijftien jaar meegaat.</p>
+    <p>De prijs van bidirectionele laders zakt met volume tot ongeveer €1.000–1.500 en niet verder,
+    omdat connector en isolatie de bodem leggen. Dat maakt de DC-route nauwelijks aantrekkelijker
+    dan netbatterijen bouwen. Alleen de omvormer in de auto zetten laat die bodem verdwijnen — een
+    keuze die nu moet, omdat de vloot vijftien jaar meegaat.</p>
   </div>
-
-  <p class="dim" style="font-size:7.4pt; font-family:var(--sans); margin-top:6mm; line-height:1.5">
-  Discussiestuk, september 2026. Alle berekeningen zijn reproduceerbaar uit bijlage A. Vervang
-  vóór formeel gebruik eerst de als <em>zacht</em> gemarkeerde aannames.</p>
 
   <div class="folio"><span>Bijlage B · Verantwoording</span><span class="num">9</span></div>
 </section>
