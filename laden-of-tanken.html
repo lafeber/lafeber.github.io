@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Laden of tanken? Omslagpunt voor je plug-in hybride</title>
+<title>Laden of tanken? Vind het omslagpunt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
@@ -166,7 +166,7 @@
 </head>
 <body>
 <main>
-  <h1>Laden of tanken met je plug-in hybride?</h1>
+  <h1>Laden of tanken?</h1>
   <p class="lede">Zet je benzineprijs en je laadpas in, en zie bij welke kWh-prijs aan de laadpaal het elektrisch rijden goedkoper wordt dan dezelfde kilometers op benzine.</p>
 
   <section class="verdict" aria-live="polite">
@@ -191,8 +191,8 @@
 
       <div class="field">
         <div class="field-head"><label for="kwh">Hoeveelheid te laden</label><output id="kwhOut"></output></div>
-        <input type="range" id="kwh" min="3" max="30" step="0.5" value="12">
-        <p class="hint">Netto in de accu. De meeste PHEV-accu’s zijn 10 tot 25 kWh.</p>
+        <input type="range" id="kwh" min="3" max="100" step="0.5" value="12">
+        <p class="hint">Netto in de accu.</p>
       </div>
 
       <div class="field">
@@ -243,7 +243,7 @@
     </section>
   </div>
 
-  <p class="foot">Laadpastarieven overgenomen van <a href="https://laadpaswijzer.nl/laadpas-vergelijken/" target="_blank" rel="noopener">laadpaswijzer.nl</a> (stand 28 oktober 2026); controleer ze voor je eigen pas. Rekent met het AC-tarief, omdat een plug-in hybride vrijwel altijd aan een gewone laadpaal laadt. Passen met een blokkeertarief zijn niet opgenomen. Laadverliezen en het zwaardere verbruik bij koud weer zijn buiten beschouwing gelaten.</p>
+  <p class="foot">Laadpastarieven overgenomen van <a href="https://laadpaswijzer.nl/laadpas-vergelijken/" target="_blank" rel="noopener">laadpaswijzer.nl</a> (stand 28 oktober 2026); controleer ze voor je eigen pas. Rekent met het AC-tarief van een gewone laadpaal. Passen met een blokkeertarief zijn niet opgenomen. Laadverliezen en het zwaardere verbruik bij koud weer zijn buiten beschouwing gelaten.</p>
 </main>
 
 <script>
